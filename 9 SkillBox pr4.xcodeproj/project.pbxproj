@@ -10,10 +10,12 @@
 		77F3B029C294ADA37642C76C /* libPods-9 SkillBox pr4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB52EF38DF660F8634AEA363 /* libPods-9 SkillBox pr4.a */; };
 		D23D8A56260A92BD00EB2914 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D8A55260A92BD00EB2914 /* AppDelegate.swift */; };
 		D23D8A58260A92BD00EB2914 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D8A57260A92BD00EB2914 /* SceneDelegate.swift */; };
-		D23D8A5A260A92BD00EB2914 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D8A59260A92BD00EB2914 /* ViewController.swift */; };
 		D23D8A5D260A92BD00EB2914 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23D8A5B260A92BD00EB2914 /* Main.storyboard */; };
 		D23D8A5F260A92C200EB2914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23D8A5E260A92C200EB2914 /* Assets.xcassets */; };
 		D23D8A62260A92C200EB2914 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23D8A60260A92C200EB2914 /* LaunchScreen.storyboard */; };
+		D23D8A76260A958B00EB2914 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D8A75260A958B00EB2914 /* MainTableViewController.swift */; };
+		D23D8A7B260A95A100EB2914 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D8A7A260A95A100EB2914 /* MainTableViewCell.swift */; };
+		D23D8A7E260A95C200EB2914 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D8A7D260A95C200EB2914 /* WeatherData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +24,13 @@
 		D23D8A52260A92BD00EB2914 /* 9 SkillBox pr4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "9 SkillBox pr4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23D8A55260A92BD00EB2914 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D23D8A57260A92BD00EB2914 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D23D8A59260A92BD00EB2914 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D23D8A5C260A92BD00EB2914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D23D8A5E260A92C200EB2914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D23D8A61260A92C200EB2914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D23D8A63260A92C200EB2914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D23D8A75260A958B00EB2914 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		D23D8A7A260A95A100EB2914 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		D23D8A7D260A95C200EB2914 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		EB52EF38DF660F8634AEA363 /* libPods-9 SkillBox pr4.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-9 SkillBox pr4.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,15 +75,49 @@
 		D23D8A54260A92BD00EB2914 /* 9 SkillBox pr4 */ = {
 			isa = PBXGroup;
 			children = (
-				D23D8A55260A92BD00EB2914 /* AppDelegate.swift */,
-				D23D8A57260A92BD00EB2914 /* SceneDelegate.swift */,
-				D23D8A59260A92BD00EB2914 /* ViewController.swift */,
-				D23D8A5B260A92BD00EB2914 /* Main.storyboard */,
+				D23D8A74260A957800EB2914 /* Controller */,
+				D23D8A73260A956C00EB2914 /* Model */,
+				D23D8A72260A953700EB2914 /* View */,
+				D23D8A70260A951900EB2914 /* others */,
 				D23D8A5E260A92C200EB2914 /* Assets.xcassets */,
-				D23D8A60260A92C200EB2914 /* LaunchScreen.storyboard */,
 				D23D8A63260A92C200EB2914 /* Info.plist */,
 			);
 			path = "9 SkillBox pr4";
+			sourceTree = "<group>";
+		};
+		D23D8A70260A951900EB2914 /* others */ = {
+			isa = PBXGroup;
+			children = (
+				D23D8A55260A92BD00EB2914 /* AppDelegate.swift */,
+				D23D8A57260A92BD00EB2914 /* SceneDelegate.swift */,
+			);
+			path = others;
+			sourceTree = "<group>";
+		};
+		D23D8A72260A953700EB2914 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D23D8A60260A92C200EB2914 /* LaunchScreen.storyboard */,
+				D23D8A5B260A92BD00EB2914 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D23D8A73260A956C00EB2914 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D23D8A7D260A95C200EB2914 /* WeatherData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D23D8A74260A957800EB2914 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D23D8A75260A958B00EB2914 /* MainTableViewController.swift */,
+				D23D8A7A260A95A100EB2914 /* MainTableViewCell.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		D5CBD6B736B02BE22C407250 /* Pods */ = {
@@ -88,7 +126,6 @@
 				0DDF1D2F69359AD8F4FC2CB5 /* Pods-9 SkillBox pr4.debug.xcconfig */,
 				4281DCD5B205FF49FDEC2414 /* Pods-9 SkillBox pr4.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -188,8 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D23D8A5A260A92BD00EB2914 /* ViewController.swift in Sources */,
 				D23D8A56260A92BD00EB2914 /* AppDelegate.swift in Sources */,
+				D23D8A7E260A95C200EB2914 /* WeatherData.swift in Sources */,
+				D23D8A76260A958B00EB2914 /* MainTableViewController.swift in Sources */,
+				D23D8A7B260A95A100EB2914 /* MainTableViewCell.swift in Sources */,
 				D23D8A58260A92BD00EB2914 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
