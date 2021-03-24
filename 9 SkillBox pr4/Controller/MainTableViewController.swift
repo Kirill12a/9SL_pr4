@@ -41,7 +41,7 @@ updateTAbleViewData()
     }
     
     func updateTAbleViewData(){
-        AF.request("https://api.openweathermap.org/data/2.5/onecall?lat=55.75&lon=37.61&exclude=minutely,hourly,alerts,current&appid=a7fdf67dfd9f1e905eb6ef1ab0899c46")
+        AF.request("https://api.openweathermap.org/data/2.5/onecall?lat=55.75&lon=37.61&exclude=minutely,hourly,alerts,current&appid=a7fdf67dfd9f1e905eb6ef1ab0899c46&lang=ru&units=metric")
             .validate()
             .responseDecodable(of: WeathersApi.self) { (response) in
                 guard let weth = response.value else { print("что-то не так")
