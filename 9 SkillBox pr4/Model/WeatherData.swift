@@ -2,6 +2,7 @@
 
 import Foundation
 
+
 struct WeathersApi: Decodable {
     let daily: [DEW]
     
@@ -12,5 +13,5 @@ struct DEW: Decodable {
     
 }
 
-
+ 
 
